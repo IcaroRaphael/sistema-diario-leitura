@@ -1,0 +1,6 @@
+@SistemaDiarioLeitura_HostAddress = http://localhost:5029
+
+GET {{SistemaDiarioLeitura_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
