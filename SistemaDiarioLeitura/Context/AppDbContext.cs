@@ -14,7 +14,7 @@ public partial class AppDbContext : DbContext
     {
     }
 
-    public virtual DbSet<Autor> Autors { get; set; }
+    public virtual DbSet<Autor> Autores { get; set; }
 
     public virtual DbSet<Genero> Generos { get; set; }
 
