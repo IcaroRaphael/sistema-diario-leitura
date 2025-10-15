@@ -64,6 +64,9 @@ public class GeneroController : ControllerBase
 
             if (!await _context.Generos.AnyAsync(g => g.Id == id))
                 return NotFound("Gênero não encontrado.");
+            
+            _context.Entry(genero).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }

@@ -75,6 +75,9 @@ public class LeituraController : ControllerBase
 
             if (!await _context.Leituras.AnyAsync(l => l.Id == id))
                 return NotFound("Leitura não encontrada.");
+            
+            _context.Entry(leitura).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
 
             return NoContent();
         }
