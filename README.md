@@ -56,7 +56,7 @@ Relacionamentos:
 
 ## 🔌 Endpoints (Resumo)
 
-Base URL (dev): `https://localhost:PORT/api`
+Base URL (dev): `http://localhost:5029/api`
 
 | Recurso | Verbo | Caminho | Ação |
 |---------|-------|--------|------|
@@ -93,7 +93,7 @@ Base URL (dev): `https://localhost:PORT/api`
 | StatusLeitura | PUT | /statusleitura/{id} | Atualiza |
 | StatusLeitura | DELETE | /statusleitura/{id} | Remove |
 
-Para experimentar, acesse o Swagger em: `https://localhost:PORT/swagger` (executando em Development).
+Para experimentar, acesse o Swagger em: `http://localhost:5029/swagger` (executando em Development).
 
 ---
 
@@ -121,7 +121,7 @@ cd sistema-diario-leitura/SistemaDiarioLeitura
 ```
 dotnet run
 ```
-5. Abrir o navegador: `https://localhost:PORT/swagger`
+5. Abrir o navegador: `http://localhost:5029/swagger`
 
 ## 🔒 Melhorias Planejadas
 * Autenticação e autorização (JWT / Identity)
